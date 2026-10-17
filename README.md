@@ -1,4 +1,4 @@
-[![Build and Release Docker Container](https://github.com/andreyhgl/deseq2/actions/workflows/build-release.yml/badge.svg)](https://github.com/andreyhgl/deseq2/actions/workflows/build-release.yml)
+[![Build and Release Docker Container](https://github.com/andreyhgl/deseq2-env/actions/workflows/build-release.yml/badge.svg)](https://github.com/andreyhgl/deseq2-env/actions/workflows/build-release.yml)
 
 A **bioconductor/bioconductor_docker:RELEASE_3_19** container with [DESeq2](https://bioconductor.org/packages/DESeq2/) R-package (and some dependencies). Used for differential gene expression analysis of RNA-seq.
 
@@ -25,22 +25,22 @@ A **bioconductor/bioconductor_docker:RELEASE_3_19** container with [DESeq2](http
 
 ```sh
 # docker
-docker pull ghcr.io/andreyhgl/deseq2:main
+docker pull ghcr.io/andreyhgl/deseq2-env:main
 
 # apptainer / singularity
-apptainer pull docker://ghcr.io/andreyhgl/deseq2:main
-singularity pull docker://ghcr.io/andreyhgl/deseq2:main
+apptainer pull docker://ghcr.io/andreyhgl/deseq2-env:main
+singularity pull docker://ghcr.io/andreyhgl/deseq2-env:main
 ```
 
 ## Run interactively
 
 ```sh
 # docker
-docker run -it --rm -v $(pwd):/data ghcr.io/andreyhgl/deseq2:main
+docker run -it --rm -v $(pwd):/data ghcr.io/andreyhgl/deseq2-env:main
 
 # apptainer / singularity
-apptainer shell docker://ghcr.io/andreyhgl/deseq2:main
-singularity shell docker://ghcr.io/andreyhgl/deseq2:main
+apptainer shell docker://ghcr.io/andreyhgl/deseq2-env:main
+singularity shell docker://ghcr.io/andreyhgl/deseq2-env:main
 ```
 
 ## Include inside a nextflow process
@@ -48,8 +48,8 @@ singularity shell docker://ghcr.io/andreyhgl/deseq2:main
 ```groovy
 process PROCESS {
   container "${workflow.containerEngine == 'singularity' ?
-    'docker://ghcr.io/andreyhgl/deseq2:main' :
-    'ghcr.io/andreyhgl/deseq2:main'}"
+    'docker://ghcr.io/andreyhgl/deseq2-env:main' :
+    'ghcr.io/andreyhgl/deseq2-env:main'}"
 }
 ```
 
@@ -58,9 +58,9 @@ The container definition uses an [elvis operator](https://www.nextflow.io/docs/l
 ## Build locally
 
 ```sh
-git clone https://github.com/andreyhgl/deseq2.git
-cd deseq2
-docker build -t deseq2 .
+git clone https://github.com/andreyhgl/deseq2-env.git
+cd deseq2-env
+docker build -t deseq2-env .
 ```
 
 ---
