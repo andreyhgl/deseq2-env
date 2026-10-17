@@ -18,6 +18,7 @@ A **bioconductor/bioconductor_docker:RELEASE_3_19** container with [DESeq2](http
   + git
   + less
   + procps (needed for Nextflow)
+  + qpdf
 </details>
 
 ## Pull the container
