@@ -9,12 +9,19 @@ A **bioconductor/bioconductor_docker:RELEASE_3_19** container with [DESeq2](http
   + DESeq2
   + apeglm
   + tximport
+  
   + gtools
   + scales
-	+ ggplot2
+	
+  + ggplot2
+  + ggvenn
   + ggrepel
   + ggsignif
   + patchwork
+  
+  + dplyr
+  + tidyr
+
   + git
   + less
   + procps (needed for Nextflow)

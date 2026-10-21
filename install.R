@@ -10,8 +10,11 @@ pkgs_cran <- c(
   "scales",
   "ggplot2",
   "ggrepel",
+  "ggvenn"
   "ggsignif",
-  "patchwork"
+  "patchwork",
+  "dplyr",
+  "tidyr",
 )
 
 install.packages(
