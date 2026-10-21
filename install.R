@@ -10,7 +10,7 @@ pkgs_cran <- c(
   "scales",
   "ggplot2",
   "ggrepel",
-  "ggvenn"
+  "ggvenn",
   "ggsignif",
   "patchwork",
   "dplyr",
