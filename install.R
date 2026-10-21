@@ -15,6 +15,7 @@ pkgs_cran <- c(
   "patchwork",
   "dplyr",
   "tidyr",
+  "reactable"
 )
 
 install.packages(

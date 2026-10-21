@@ -21,6 +21,7 @@ A **bioconductor/bioconductor_docker:RELEASE_3_19** container with [DESeq2](http
   
   + dplyr
   + tidyr
+  + reactable
 
   + git
   + less
